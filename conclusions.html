@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome to Geocoders Comparison’s documentation! &#8212; Geocoders Comparison 0.01 documentation</title>
+    <title>Conclusions &#8212; Geocoders Comparison 0.01 documentation</title>
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -23,21 +23,15 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="nav-item nav-item-0"><a href="#">Geocoders Comparison 0.01 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Geocoders Comparison 0.01 documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Welcome to Geocoders Comparison’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
+      <li><a href="_sources/conclusions.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -61,18 +55,14 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="welcome-to-geocoders-comparison-s-documentation">
-<h1>Welcome to Geocoders Comparison’s documentation!<a class="headerlink" href="#welcome-to-geocoders-comparison-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
-</ul>
+  <div class="section" id="conclusions">
+<h1>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">¶</a></h1>
+<p># The main conclusion from this comparison:</p>
+<p>Depending on the geolocating service used AND the location queried, the geolocation coordinates will be WRONG.
+As I have not checked all available geocoding services - there are to date, 47 of them available via geopy - I cannot rank them, especially since none of
+them can be set as an absolute ground-truth.
+However, my comparison of four geocoders (Nominatim, GoogleV3, ArcGis and AzureMaps), shows some are more consistent that the others, among them Nominatim, the geocoder of OpenStreetMaps and GoogleV3, the geocoder of GooglePlaces API.
+ArcGis usually returns the largest bounding boxes, and AzureMaps has - literally - “far out” results on several locations.</p>
 </div>
 
 
@@ -87,7 +77,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li class="nav-item nav-item-0"><a href="#">Geocoders Comparison 0.01 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Geocoders Comparison 0.01 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
