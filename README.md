@@ -1,2 +1,0 @@
-# CatChenal.github.io
-Troubleshooting
