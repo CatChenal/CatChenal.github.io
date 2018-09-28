@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "This is my gihub-page"
 title_separator          : "-"
 name                     : "Cat Chenal"
 description              : "My Data Science projects, mostly."
@@ -76,7 +76,7 @@ naver_site_verification  :
 twitter:
   username               :Ylemental
 
-og_image                 : "/assets/images/earthrise.jpg"
+og_image                 : "/assets/images/ISEE3.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Cat Chenal"
-  avatar           : "/assets/images/earthrise.jpg"
+  avatar           : "/assets/images/me.jpg"
   bio               : "Data Scientist."
   location         : "New York City"
   email            :
@@ -113,7 +113,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CatChenal"
     - label: "Google+"
-      icon: "fab fa-fw fa-google+"
+      icon: "fab fa-google-plus-g"
       url: "https://plus.google.com/u/0/+CatChenal"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -131,7 +131,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CatChenal"
     - label: "Google+"
-      icon: "fab fa-fw fa-google+"
+      icon: "fab fa-google-plus-g"
       url: "https://plus.google.com/u/0/+CatChenal"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
