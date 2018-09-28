@@ -130,7 +130,7 @@ plt.savefig('../assets/images/barplot_First_output.png', format='png', layout='t
 plt.tight_layout();
 ```
 
-![png]('../assets/images/barplot_First_output.png')
+![png]("{{ site.url }}{{ site.baseurl }}/images/barplot_First_output.jpg")
 
 
 ## By default:
@@ -140,7 +140,7 @@ plt.tight_layout();
 
 
 ## Because the bar heights equal the values in the series, the y-axis is redundant and a more desirable output would be this one:  
-![png]("../assets/images/Bar_plot_Percentage_of_Respondents.png")
+![png]("{{ site.url }}{{ site.baseurl }}/images/Bar_plot_Percentage_of_Respondents.jpg")
 
 
 # Anatomy of a bar plot via its *containers* collection:  
@@ -250,4 +250,5 @@ plt.savefig('../assets/images/barplot_Final_output.png', format='png', transpare
 plt.tight_layout();
 ```
 
-![png]('../assets/images/barplot_Final_output.png')
+![png]("{{ site.url }}{{ site.baseurl }}/images/barplot_Final_output.jpg")
+
