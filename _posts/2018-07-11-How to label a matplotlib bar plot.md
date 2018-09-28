@@ -5,7 +5,6 @@ tags: [Data Visulaization]
 excerpt: "Fine tuning a Matplotlib barplot"
 ---
 
-# How to label a matplotlib bar plot
 (Hint: never (re)iterate the data source, use the plot objects)
 
 At some point during EDA, you often produce summary tables (after an untold number of processing steps), which can be nicely visualized with a bar plot.
