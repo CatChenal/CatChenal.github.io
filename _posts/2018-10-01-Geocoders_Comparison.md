@@ -21,5 +21,6 @@ So, yes, Nominatim wins!
 
 [Github repo:](https://github.com/CatChenal/Geocoders_Comparison)
 
-[HTML report](/assets/images/GeocodersComparisonReport.html)
+HTML report:
+<iframe src="/assets/images/GeocodersComparisonReport.html" ></iframe>
 
