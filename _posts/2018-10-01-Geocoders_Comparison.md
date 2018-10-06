@@ -1,5 +1,5 @@
 ---
-title: "Geocoders_Comparison"
+title: "Geocoders Comparison"
 date: 2018-10-01
 tags: [Data Visualization, GIS, folium]
 excerpt: "Discovering the geocoding quirks &mdash; a polite characterization&mdash; in Nominatim, GoogleV3, ArcGis and AzureMaps APIs."
@@ -21,5 +21,5 @@ So, yes, Nominatim wins!
 
 [Github repo:](https://github.com/CatChenal/Geocoders_Comparison)
 
-[HTML report]({{ site.url }}{{ site.baseurl }}/assets/images/GeocodersComparisonReport.html)
+[HTML report](/assets/images/GeocodersComparisonReport.html)
 
