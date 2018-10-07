@@ -21,9 +21,9 @@ title_separator          : "-"
 name                     : "Cat Chenal"
 description              : "My Data Science projects, mostly."
 url                      : "https://CatChenal.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/_posts"
 repository               : "https://github.com/CatChenal/CatChenal.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/ISEE3.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 180
 
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Cat Chenal"
   avatar           : "/assets/images/me.jpg"
-  bio               : "Data Scientist"
+  bio               : "Data Science Portfolio"
   location         : "New York City"
   email            :
   links:
@@ -203,9 +203,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: "/_posts/page:num/"
 timezone: "Eastern"
 
 
