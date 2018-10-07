@@ -1,6 +1,7 @@
 ---
 title: "My Toolbox"
 permalink: /toolbox/
+author_profile: true
 header:
   image: "/assets/images/me.jpeg"
 ---
