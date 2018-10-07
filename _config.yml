@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Cat Chenal"
 description              : "My Data Science projects, mostly."
 url                      : "https://CatChenal.github.io"
-baseurl                  : "/_posts"
+baseurl                  : # "/_posts"
 repository               : "https://github.com/CatChenal/CatChenal.github.io"
 teaser                   : "/assets/images/ISEE3.jpg"
 # breadcrumbs            : false # true, false (default)
