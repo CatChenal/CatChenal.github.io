@@ -36,9 +36,9 @@ The [**notebook** in ./GeocodersComparison/](./GeocodersComparison/Report_Items.
 Depending on the geolocating service used AND the location queried, the geolocation coordinates will be WRONG. 
 As I have not checked all available geocoding services - there are to date, 47 of them available via geopy - I cannot rank them, especially since none of 
 them can be set as an absolute ground-truth. 
-However, my comparison shows that some are more consistent that the others, among them [**Nominatim**](https://wiki.openstreetmap.org/wiki/Nominatim), the 
-geocoder of [OpenStreetMaps](https://wiki.openstreetmap.org/wiki/Using_OpenStreetMap) and [GoogleV3](https://geopy.readthedocs.io/en/stable/#googlev3), the geocoder of [Google Map & Places API](https://developers.google.com/maps/documentation/geocoding/start).
-[ArcGis](https://geopy.readthedocs.io/en/stable/#ArcGis), the [ERSI ArcGIS API]() usually returns the largest bounding boxes, and AzureMaps has - literally - "far out" results on several locations.
+However, my comparison shows that some are more consistent that the others, namely **Nominatim** and **GoogleV3**.
+ArcGis usually returns the largest bounding boxes, and AzureMaps has - literally - "far out" results on several locations.
+
 
 ## Which is the best geocoder?
 
@@ -48,12 +48,11 @@ some location in Long Island for the query 'Kings county, New York, NY, USA' (se
 Next is ArcGis, which usually returns oversize boxes, except for Brooklyn where its box is too short (even ignoring the maritime area).
 Nominatim and GoogleV3 have similar results, but Nominatim is free.
 
-
 So, yes, Nominatim wins!
 
 ## Following is the complete report: 
 [notebook viewer](https://nbviewer.jupyter.org/github/CatChenal/Geocoders_Comparison/blob/master/GeocodersComparisonReport.ipynb)
 
 
-[Github repo:](https://github.com/CatChenal/Geocoders_Comparison)
+[Github repo](https://github.com/CatChenal/Geocoders_Comparison)
 
