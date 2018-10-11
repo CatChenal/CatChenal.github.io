@@ -30,3 +30,8 @@ I have several motivations for mentoring/taching:
 
 2. Unusable public data: this happens when one has to contact the posting agency/organization in order to obtain the field definitions and, possibly, the data structure. This is a case of false transparency usually mendated by a well-meaning law - e.g. "public data should be public", but lacking a definition for useability.
 
+
+# Foreign languages
+* English
+* French (mother tongue)
+* Some Spanish
