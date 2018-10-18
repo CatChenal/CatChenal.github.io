@@ -100,4 +100,5 @@ right = ( base.transform_filter(datum.gender == 'Male')
 left | middle | right
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/age_pyramid.png" alt="Age Pyramid">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/age_pyramid.png" 
+     style="height:500px;" alt="Age Pyramid">
