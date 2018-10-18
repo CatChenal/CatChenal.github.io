@@ -133,7 +133,7 @@ plt.tight_layout();
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_First_output.png"
-         style="height:600px;"  alt="First output">
+         alt="First output">
 
 ## By default:
  -  <span style="font-size:2em; ">the y-axis is visible </span>
@@ -258,5 +258,5 @@ plt.tight_layout();
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_Final_output.png" 
-         style="height:600px;" alt="Final output">
+         alt="Final output">
 
