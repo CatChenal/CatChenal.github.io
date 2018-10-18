@@ -7,8 +7,8 @@ excerpt: "A tweaked and annotated rendering of the example given in the [Altair 
 
 # Charting an Age Pyramid in [Altair](https://altair-viz.github.io/)
 
->### Altair is a declarative statistical visualization library for Python, based on Vega and Vega-Lite, and the source is 
-available on [GitHub](https://github.com/altair-viz/altair).
+>### Altair is a declarative statistical visualization library for Python, based on 
+>Vega and Vega-Lite, and the source is available on [GitHub](https://github.com/altair-viz/altair).
 
 
 ```python
@@ -17,8 +17,8 @@ from vega_datasets import data
 from altair.expr import datum, if_
 ```
 
-### If you are running this code in a Jupyter notebook (as opposed to a JupyterLab book), uncomment the next cell and 
-run it to enable rendering in the notebook session. 
+### If you are running this code in a Jupyter notebook (as opposed to a JupyterLab book), 
+uncomment the next cell and run it to enable rendering in the notebook session. ###
 
 ```python
 # alt.renderers.enable('notebook')
@@ -98,6 +98,5 @@ right = ( base.transform_filter(datum.gender == 'Male')
 left | middle | right
 ```
 
-![Age Pyramid]("{{ site.url }}/assets/images/age_pyramid.png")
-
-
+![Age Pyramid]("{{ site.url }}{{ site.baseurl }}/assets/images/age_pyramid.png")
+![Age Pyramid]("../assets/images/age_pyramid.png")
