@@ -132,8 +132,8 @@ plt.savefig('../assets/images/barplot_First_output.png', format='png', layout='t
 plt.tight_layout();
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_First_output.png" alt="First output">
-
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_First_output.png"
+         style="height:600px;"  alt="First output">
 
 ## By default:
  -  <span style="font-size:2em; ">the y-axis is visible </span>
@@ -148,12 +148,12 @@ plt.tight_layout();
 # Anatomy of a bar plot via its *containers* collection:  
 
 ## Containers are defined for each data series. They have 2 attributes:  
-> <span style=" font-size:2em;">__Attributes:__ </span>
->> <span style=" font-size:2em;"><span style="color:darkblue;">patches</span>: list of Rectangle objects. </span>  
-    <span style=" font-size:1em;">The artists of the bars. </span>
+<span style=" font-size:2em;">__Attributes:__ </span>
+> <span style=" font-size:2em;"><span style="color:darkblue;">patches</span>: list of Rectangle objects. </span>  
+>   <span style=" font-size:1em;">The artists of the bars. </span>
 
->> <span style=" font-size:2em;">errorbar: None or ErrorbarContainer. </span>  
-    <span style=" font-size:1em;">A container for the error bar artists if error bars are present. None otherwise.  </span>
+><span style=" font-size:2em;">errorbar: None or ErrorbarContainer. </span>  
+>    <span style=" font-size:1em;">A container for the error bar artists if error bars are present. None otherwise.  </span>
    
 
 
@@ -257,5 +257,6 @@ plt.savefig('../assets/images/barplot_Final_output.png',
 plt.tight_layout();
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_Final_output.png" alt="Final output">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/barplot_Final_output.png" 
+         style="height:600px;" alt="Final output">
 
