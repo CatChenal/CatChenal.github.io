@@ -2,7 +2,8 @@
 title: "An Age Pyramid in Altair"
 date: 2018-10-18
 tags: [Data Visualization, Altair]
-excerpt: "A tweaked and annotated rendering of the example given in the [Altair Gallery](https://altair-viz.github.io/gallery/index.html)"
+excerpt: "A tweaked and annotated rendering of the example given in the 
+[Altair Gallery](https://altair-viz.github.io/gallery/index.html)"
 ---
 
 # Charting an Age Pyramid in [Altair](https://altair-viz.github.io/)
@@ -47,7 +48,8 @@ in my local environment:
 
 
 ____
-*This is a correction of the Gallery [example](https://altair-viz.github.io/gallery/us_population_pyramid_over_time.html), which renders an **inverted** age pyramid.*
+*This is a correction of the Gallery [example](https://altair-viz.github.io/gallery/us_population_pyramid_over_time.html), 
+which renders an **inverted** age pyramid.*
 
 
 ```python
