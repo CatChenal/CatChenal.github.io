@@ -11,7 +11,6 @@ At some point during EDA, you often produce summary tables (after an untold numb
 
 **Here, I show how to modify the default output for a more appealing result.**
 
-[abbreviated file for debugging]
 
 # Code:
 
@@ -30,6 +29,7 @@ np.set_printoptions(precision=2)
 ### For EDA, you often produce summary tables (after an untold number of processing steps).  
 ### The summary table for categorical responses to a survey may look like this:
 # Raw data:
+```raw
 ,Very interested,Somewhat interested,Not interested
 Data Analysis,0.77,0.2,0.03
 Machine Learning,0.75,0.22,0.03
@@ -37,10 +37,13 @@ Data Vis.,0.62,0.34,0.05
 Big Data,0.61,0.33,0.06
 Deep Learning,0.58,0.36,0.06
 Data Journalism,0.2,0.51,0.29
+```
 
 ```python
 df = pd.read_csv('./data/ordered_survey_pct.csv', header=0, 
-                 names=['Very interested', 'Somewhat interested', 'Not interested'])
+                 names=['Very interested', 
+                              'Somewhat interested', 
+                              'Not interested'])
 df
 ```
 
@@ -129,7 +132,7 @@ plt.savefig('../assets/images/barplot_First_output.png', format='png', layout='t
 plt.tight_layout();
 ```
 
-![png]("{{ site.url }}{{ site.baseurl }}/assets/images/barplot_First_output.jpg")
+![First output]("{{ site.url }}/assets/images/barplot_First_output.png")
 
 
 ## By default:
@@ -139,7 +142,7 @@ plt.tight_layout();
 
 
 ## Because the bar heights equal the values in the series, the y-axis is redundant and a more desirable output would be this one:  
-![png]("{{ site.url }}{{ site.baseurl }}/assets/images/Bar_plot_Percentage_of_Respondents.jpg")
+![Percentage of respondents]("{{ site.url }}/assets/images/Bar_plot_Percentage_of_Respondents.png")
 
 
 # Anatomy of a bar plot via its *containers* collection:  
@@ -234,8 +237,12 @@ y_offset = 0.03
 for p in ax.patches:
     p_x = p.get_xy()[0]
     p_h = p.get_height()
-    ax.text( x=p_x + x_offset, y=p_h + y_offset , s="{:.0f}%".format(round(p_h*100, 0)), 
-             ha='left', va='center', fontsize=11)
+    ax.text( x=p_x + x_offset, 
+                y=p_h + y_offset , 
+                s="{:.0f}%".format(round(p_h*100, 0)), 
+                ha='left', 
+                va='center', 
+                fontsize=11)
         
 # NOTE: ha='left' goes with x_offset = 0. If instead ha='center',
 #       the label will 'pre-hang' over the bar, so an x-position offset will be needed.       
@@ -245,9 +252,10 @@ plt.legend(fontsize=14);
 
 plt.title("Percentage of Respondents' interest in Data Science Areas", fontsize=16);
 
-plt.savefig('../assets/images/barplot_Final_output.png', format='png', transparent=True, layout='tight')
+plt.savefig('../assets/images/barplot_Final_output.png', 
+                format='png', transparent=True, layout='tight')
 plt.tight_layout();
 ```
 
-![png]("{{ site.url }}{{ site.baseurl }}/assets/images/barplot_Final_output.jpg")
+![Final output]("{{ site.url }}/assets/images/barplot_Final_output.png")
 
