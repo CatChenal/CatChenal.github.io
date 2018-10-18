@@ -99,5 +99,5 @@ right = ( base.transform_filter(datum.gender == 'Male')
 # Concatenate the three charts horizontally, same as using alt.hconcat(left, middle, right):
 left | middle | right
 ```
-![Age Pyramid]("../assets/images/age_pyramid.png")
+
 ![Age Pyramid]("{{ site.url }}{{ site.baseurl }}/assets/images/age_pyramid.png")
