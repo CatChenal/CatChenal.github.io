@@ -24,20 +24,23 @@ The webcast actually distills these three blog posts referenced by Nally at the 
 *  [Understanding versioning](https://cloud.google.com/blog/products/gcp/api-design-which-version-of-versioning-is-right-for-you)
 
 I am sure I'll have to revisit these resources when I'm ready to implement an API, along with 
-[this excellent other one](https://blog.philipphauer.de/restful-api-design-best-practices/), but the point of this posts is that 
-sometimes,  one's curiosity can be rewarded beyond one's expectations.
+[this excellent other one](https://blog.philipphauer.de/restful-api-design-best-practices/), but the point of this post is that 
+sometimes,  one's curiosity can be rewarded beyond one's expectations.  
 
 Here is what I mean:
+
+
 It took Nally only 3 minutes (at slide 6, 3.06 m in) to reach the topic of "Important Problems" and 
-to quote Richard Hamming from a transcript of a lecture Hamming gave long ago titled "You and Your Research":
+to quote from a Richard Hamming's lecture entitled "You and Your Research":
 >"Great scientists have thought through a number of important
 >problems in their fields, and they keep an eye on how to attack them."
 
 Also at the end, again referencing Hamming's lecture, Nally signs off with this humble quip:
-"If you got nothing else out of this talk maybe you got a reference to a better talk[!]"
+>"If you got nothing else out of this talk maybe you got a reference to a better talk[!]"
+
 
 Now, that really picked my curiosity and I went ahead and watched the Hamming lecture.
-The advises that Hamming gives about how to keep your professional life meaningful, in addition to
+The advices that Hamming gives about how to keep your professional life meaningful, in addition to
 his telling of colorful anecdotes, make this lecture a must see/read.
 
 **I wish I had known about it when I first entered college!**
