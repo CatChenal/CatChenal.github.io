@@ -5,22 +5,19 @@ tags: [API Design, Apigee, Nally, Hamming]
 excerpt: "Some webcasters are more generous than others..."
 ---
 
-# From API design best practices to Richard Hamming's life lessons: all in one webcast!
 ### *The webcast was live on 11-20-2018.*
+###
 
-
-Late last month, I watched webcast entitled [API Design Best Practices & Common Pitfalls]
-(https://www.youtube.com/watch?time_continue=2&v=kgIq02wP73s) given by Martin Nally, 
+Late last month, I watched webcast entitled [API Design Best Practices & Common Pitfalls](https://www.youtube.com/watch?time_continue=2&v=kgIq02wP73s) given by Martin Nally, 
 Senior Software Engineer at Apigee | Google Cloud. 
 
 Note that Apigee is Google's new API management platform, but the talk was more general.
-The gist of the talk, if I understood correctly, is that APIs &mdash at least some of them &mdash
+The gist of the talk, if I understood correctly, is that APIs &mdash; at least some of them &mdash;
 are the means to tackle two main software problems: software change and software integration.
 
 The webcast actually distills these three blog posts referenced by Nally at the end:
 
-*  [REST vs. RPC: what problems are you trying to solve with your APIs?]
-(https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis)
+*  [REST vs. RPC: what problems are you trying to solve with your APIs?](https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis)
 
 *  [Understanding identity](https://cloud.google.com/blog/products/gcp/api-design-choosing-between-names-and-identifiers-in-urls)
 
@@ -56,8 +53,9 @@ As per the publisher's notes on that page, the lecture was part of a course:
 
 A a transcript from a similar lecture from 1986 is [here](https://cs.uwaterloo.ca/~brecht/courses/854/readings/you-and-your-research-hamming.pdf).
 
-There is another lecture by Hamming ["Mathematics" (May 18, 1995)] (https://www.youtube.com/watch?v=Km9_rBUGYYk):
->"Mathematics is the language of clear thinking."
+There is another lecture by Hamming ["Mathematics" (May 18, 1995)](https://www.youtube.com/watch?v=Km9_rBUGYYk):
+>"Mathematics is the language of clear thinking."  
 
-That was a rabbit hole full of carots, methinks!
+
+That was a rabbit hole full of carrots, methinks!
 
