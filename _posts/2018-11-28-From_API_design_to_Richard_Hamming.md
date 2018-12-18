@@ -23,9 +23,10 @@ The webcast actually distills these three blog posts referenced by Nally at the 
 
 *  [Understanding versioning](https://cloud.google.com/blog/products/gcp/api-design-which-version-of-versioning-is-right-for-you)
 
-I am sure I'll have to revisit these resources when I'm ready to implement an API, along with 
-[this excellent other one](https://blog.philipphauer.de/restful-api-design-best-practices/), but the point of this post is that 
-sometimes,  one's curiosity can be rewarded beyond one's expectations.  
+
+These are great references about API design AND they are very well written!
+I am sure I'll revisit them at some point, along with [this excellent other one](https://blog.philipphauer.de/restful-api-design-best-practices/), 
+but the point of this post is that sometimes,  one's curiosity can be rewarded beyond one's expectations.  
 
 Here is what I mean:
 
