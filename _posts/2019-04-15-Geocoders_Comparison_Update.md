@@ -1,6 +1,6 @@
 ---
 title: "Geocoders Comparison"
-date: 2018-10-01
+date: 2019-04-15
 tags: [Data Visualization, GIS, folium]
 excerpt: "Discovering the geocoding quirks &mdash; a polite characterization&mdash; in Nominatim, GoogleV3, ArcGis and AzureMaps APIs."
 ---
