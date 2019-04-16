@@ -37,10 +37,15 @@ Depending on the geolocating service used AND the location queried, the geolocat
 
 # Update:
 
-I found out differences in the results when I rerun the comaprison: the temporal report between the data from April, 2019 and September 2018 can be viewed side by side in this HTML report implmented with a CSS slider:
-[slider Report (html)](./sliderReport.html)
+I found out differences in the results when I rerun the comaprison: the temporal report between the data from April, 2019 and September 2018 can be viewed side by side in this HTML report implmented with a CSS slider:  
 
 (Note: Under testing for proper resource links.)
-<a href="sliderReport.html" target="_blank">slider Report</a>
+
+[slider Report (html)]({{ site.url }}{{ site.baseurl }}/_posts/sliderReport.html)
+
+
+<a href="{{ site.url }}{{ site.baseurl }}/_posts/sliderReport.html" target="_blank">slider Report</a>
+
+
 
 [Github repo](https://github.com/CatChenal/Geocoders_Comparison)
