@@ -41,10 +41,10 @@ I found out differences in the results when I rerun the comaprison: the temporal
 
 (Note: Under testing for proper resource links.)  
 
-[slider Report (html)]({{ site.url }}/_posts/sliderReport.html)
+[slider Report (html)]({{ site.url }}/sliderReport.html)
 
 
-<a href="{{ site.url }}/_posts/sliderReport.html" target="_blank">slider Report</a>
+<a href="{{ site.url }}/sliderReport.html" target="_blank">slider Report</a>
 
 
 
