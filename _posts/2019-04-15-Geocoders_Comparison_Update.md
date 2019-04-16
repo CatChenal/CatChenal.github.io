@@ -31,10 +31,16 @@ The [**Procedures notebook**](https://github.com/CatChenal/Geocoders_Comparison/
 # The main conclusion from this comparison:
 Depending on the geolocating service used AND the location queried, the geolocation coordinates will be WRONG. 
 
-
 ## Following is the complete report: 
 [notebook viewer](https://nbviewer.jupyter.org/github/CatChenal/Geocoders_Comparison/blob/master/GeocodersComparison/report/Report.ipynb)
 
 
-[Github repo](https://github.com/CatChenal/Geocoders_Comparison)
+# Update:
 
+I found out differences in the results when I rerun the comaprison: the temporal report between the data from April, 2019 and September 2018 can be viewed side by side in this HTML report implmented with a CSS slider:
+[slider Report (html)](./sliderReport.html)
+
+(Note: Under testing for proper resource links.)
+<a href="sliderReport.html" target="_blank">slider Report</a>
+
+[Github repo](https://github.com/CatChenal/Geocoders_Comparison)
