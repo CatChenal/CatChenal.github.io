@@ -1,8 +1,8 @@
 ---
-title: "Geocoders Comparison"
+title: "Geocoders Comparison Update"
 date: 2019-04-15
 tags: [Data Visualization, GIS, folium]
-excerpt: "Discovering the geocoding quirks &mdash; a polite characterization&mdash; in Nominatim, GoogleV3, ArcGis and AzureMaps APIs."
+excerpt: "Discovering the geocoding quirks in Nominatim, GoogleV3, ArcGis and AzureMaps APIs: September, 2018 vs. April, 2019 results."
 ---
 
 # Comparison of four geocoders: Nominatim, GoogleV3, ArcGis and AzureMaps# Comparison of Four Geocoders: Nominatim, GoogleV3, ArcGis and AzureMAps
@@ -41,10 +41,10 @@ I found out differences in the results when I rerun the comaprison: the temporal
 
 (Note: Under testing for proper resource links.)  
 
-[slider Report (html)]({{ site.url }}/sliderReport.html)
+[slider Report (html)]({{ site.url }}/assets/sliderReport.html)
 
 
-<a href="{{ site.url }}/sliderReport.html" target="_blank">slider Report</a>
+<a href="{{ site.url }}/assets/sliderReport.html" target="_blank">slider Report</a>
 
 
 
