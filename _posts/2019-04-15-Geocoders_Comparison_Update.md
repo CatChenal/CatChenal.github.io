@@ -5,7 +5,7 @@ tags: [Data Visualization, GIS, folium]
 excerpt: "Discovering the geocoding quirks in Nominatim, GoogleV3, ArcGis and AzureMaps APIs: September, 2018 vs. April, 2019 results."
 ---
 
-# Comparison of four geocoders: Nominatim, GoogleV3, ArcGis and AzureMaps# Comparison of Four Geocoders: Nominatim, GoogleV3, ArcGis and AzureMAps
+# Comparison of four geocoders: Nominatim, GoogleV3, ArcGis and AzureMaps
 
 ## Geocoding services (via Geopy):
 
@@ -28,24 +28,17 @@ Yet, in the intervening time I had checked several services for speed and limits
 
 The [**Procedures notebook**](https://github.com/CatChenal/Geocoders_Comparison/notebooks/Procedures.ipnyb) shows how to retrieve the data and functions.
 
-# The main conclusion from this comparison:
-Depending on the geolocating service used AND the location queried, the geolocation coordinates will be WRONG. 
+# The main conclusion from this comparison:  
+I presume that it is very unlikely that an application would use different geolocating services, but in the case some 'hedging' is involved (e.g. on limits, time-outs), the geolocation for the same query will be different.
+Additionally, my non-exhaustive comparison of four Geopy geocoders (out of 21), reveals that the boxing of a location is not always principled. For instance, Nominatim and GoogleV3 most often use the shapefile with water extent for boxing, whereas ArcGis and AzureMaps do not; moreover, ArcGis boxes typically extend further North than warranted by the existing shapefiles by at most 10 miles.  
 
-## Following is the complete report: 
-[notebook viewer](https://nbviewer.jupyter.org/github/CatChenal/Geocoders_Comparison/blob/master/GeocodersComparison/report/Report.ipynb)
+# Update: Results &mdash;not the code&mdash; have changed!
 
-
-# Update:
-
-I found out differences in the results when I rerun the comaprison: the temporal report between the data from April, 2019 and September 2018 can be viewed side by side in this HTML report implmented with a CSS slider:  
-
-(Note: Under testing for proper resource links.)  
-
-[slider Report (html)]({{ site.url }}/assets/sliderReport.html)
-
+When I rerun the geocoders comparison earlier this month (April, 2019), I found out differences in the results. The temporal report between the results from September, 2018 and those from April, 2019 can be viewed side by side in this HTML report implmented with a CSS slider:  
 
 <a href="{{ site.url }}/assets/sliderReport.html" target="_blank">slider Report</a>
 
-
+I've implemented the "sliderReport.html" by modifying a ["JS-less CSS slider"](https://github.com/drygiel/csslider) designed by GH user drygiel"  
+Thank you, drygiel!
 
 [Github repo](https://github.com/CatChenal/Geocoders_Comparison)

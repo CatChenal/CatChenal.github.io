@@ -3,30 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Geocoders Comparisons (slider)</title>
-    <link rel="stylesheet" href="./css/custom.css" />
-    <link rel="stylesheet" href="./css/new_slider.css" />
+    <link rel="stylesheet" href="./css/custom_slid.css" />
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
 <body>
-    <h1 style="padding: 40px;">
+    <h1 style="padding: 30px;">
           Four Geocoders Comparisons</h1>
-    <div class="site-footer">
-        <!-- workaround for absence of footer-->
-        <p>
-            <a href="https://github.com/CatChenal">
-                <i class="fa fa-github" 
-                   style="font-size:3em;color:#006699;"></i>
-            </a> 
-            <a href="https://www.linkedin.com/in/catchenal/">
-                <i class="fa fa-linkedin-square" 
-                   style="font-size:3em;color:#006699"></i>
-            </a><br>
-            <strong>Cat Chenal</strong>
-        </p>
-    </div>
     
     <div id="slider1" class="csslider infinity">
         <input type="radio" name="slides" id="slides_1" checked />
@@ -86,7 +70,7 @@
             <li>
                 <figure>
                     <figcaption>Apr, 2019: &nbsp; Changed: &#9989; AzureMaps still differ the 
-                        most, but it looks like ArcGis has corrected some boxes?
+                        most (Note: the color is scaled to new extremes; other values may be unchanged, e.g. ArcGis)
                     </figcaption>
                     <img src="./images/Heatmap_sns_geodist_difference_mi.svg" 
                             alt="new Pairwise differences in miles">
@@ -119,7 +103,7 @@
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: New York City: (zoom OUT 1x)
+                            <figcaption>Sep, 2018: New York City:
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_New_York_City.html">
@@ -128,7 +112,7 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; Changed: &#9989; (zoom OUT 1x)
+                            <figcaption>Apr, 2019: &nbsp; Changed: &#9989;
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/New_York_City.html">
@@ -259,7 +243,7 @@
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Staten Island (Richmond) county (zoom OUT 1x):
+                            <figcaption>Sep, 2018: Staten Island (Richmond) county:
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Richmond_county.html">
@@ -268,7 +252,7 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse! (zoom OUT 4x)
+                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse! (zoom OUT 3x)
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/Richmond_county.html">
@@ -318,19 +302,17 @@
         </div>
     </div>
 
-    <!-- anything past the slider is not showing-->
-
 </body>
-
-<!-- footer not showing -->
-<footer class="site-footer">
+<footer>
     <p style="font-size:2em;"><strong>Cat Chenal</strong></p>
     <p>
         <a href="https://github.com/CatChenal">
-        <i class="fa fa-github"  style="font-size:60px;color:white;"></i></a>  
+        <i class="fa fa-github" 
+           style="font-size:3em;color:white;"></i></a>  
          &nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/catchenal/">
-        <i class="fa fa-linkedin-square" style="font-size:60px;color:white"></i></a>
+        <i class="fa fa-linkedin-square"
+           style="font-size:3em;color:white"></i></a>
     </p>
 </footer>
 </html>
