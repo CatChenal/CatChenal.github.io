@@ -21,8 +21,7 @@ a wrapping library such as [geopy](https://geopy.readthedocs.io/en/stable/).
 
 ## Why I setup this comparison:
 In another application, I was using the New York City boroughs bounding boxes to impute missing borough names for records with geolocation information. 
-The most expert GIS users among you would certainly predict scattershot results from such a "corner-cutting" approach, but initially I thought mine was a brilliant way to prevent over 85,000 requests...
-After I found out about the official territorial boundaries (shapefiles), I trashed the box solution!  
+The most expert GIS users among you would certainly predict scattershot results from such a "corner-cutting" approach, but initially I thought mine was a brilliant way to prevent over 85,000 requests... After I found out about the official territorial boundaries (shapefiles), I trashed the box solution!  
 
 Yet, in the intervening time I had checked several services for speed and limits and I found out response differences between some geocoders...for the same query, so I investigated!
 
