@@ -28,17 +28,15 @@ body {
     font: 400 100% 'Raleway', 'Lato';
     color: #333;
 }
+embed {
+  width: 100%;
+  height: 100%;
+}
+
 ul, ol {
     padding-left: 10px;
 }
-/*
-.csslider .navigation label {
-    background: #B1B1B1;
-}
-.csslider.inside .navigation label {
-    border: 1px solid #FFF;
-}
-*/
+
 /* aliasing of class csslider: in original implementation
 enabled id of slide with extra text animation (removed here).
 See: https://github.com/drygiel/csslider */
@@ -50,28 +48,21 @@ See: https://github.com/drygiel/csslider */
 .scrollable li {
   background-color: white;
 }
-.scrollable h1, h2, h3 {
+.scrollable h1, h2, h3, h4 {
   padding: 30px;
   text-align: justify;
-  line-height: 140%;
+  line-height: 120%;
   font-size: 120%;
-  background-color: white;
 }
 .scrollable p {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    text-align: justify;
-    line-height: 140%;
-    font-size: 120%;
-    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 1px;
+    text-align: left;
+    line-height: 110%;
+    font-size: 110%;
 }
-/* to get extra blank lines*/
-#last-p {
-  padding-bottom: 200px;
-  text-align: justify;
-  background-color: white;
-}
+
 /* ### start import from csslider */
 .csslider {
   -moz-perspective: 1300px;
@@ -125,15 +116,15 @@ See: https://github.com/drygiel/csslider */
 }
 .csslider > ul {
   position: relative;
-  /* change to enclosed entire pic: */
-  width: 1720px;
-  /* height as in iframe.pic */
-  height: 680px;
+  /* changed to enclosed largest pic: */
+  width: 1500px;
+  /* height: iframe/img=500px; text=220px */
+  height: 720px;
   z-index: 1;
   font-size: 0;
   line-height: 0;
   background-color: #FFF;
-  border: 1px solid #d1d1d1; 
+  /*border: 1px solid #d1d1d1; */
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -144,13 +135,11 @@ See: https://github.com/drygiel/csslider */
 }
 .csslider > ul > li {
   position: relative;
-  /*cannot change display prop: 
-    slider -> non-functional*/
+  /*cannot change display prop: slider turns non-functional*/
   display: inline-block;
   width: 100%;
-  height: 100%;
+
   overflow: hidden;
-  font-size: 15px;
   font-size: initial;
   line-height: normal;
   -o-transition: all 0.5s ease-out;
@@ -169,6 +158,7 @@ See: https://github.com/drygiel/csslider */
 }
 .csslider > ul > li.scrollable {
   overflow-y: scroll;
+  height: 600px;
 }
 .csslider .arrows label {
     border-left-color: #B1B1B1;
@@ -275,61 +265,71 @@ See: https://github.com/drygiel/csslider */
 }
 /* ### end import from csslider */
 
-header {
+/*header {
     background-color: #006699;
     padding: 2px;
     text-align: center;
     font-size: 20px;
     color: white;
-}
+}*/
 footer {
-    position:relative;
-    left: 100px;
-    top: 40px;
-    align-self: center;
+    position: relative;
+    top: 30px;
     /*like slider.ul width */
-    width: 1720px;
+    width: 1500px;
+    left: 210px;
     padding: 5px;
+    align-self: center;
     background-color: #006699;
 }
 /* From W3C:*/
 figure {
-    float: left;
     width: 100%;
-    text-align: left;
-    font-size: medium;
-    text-indent: 1px;
+    align-self: center;
     border: thin silver solid;
     margin: 0em;
     padding: 0em;
   }
 figcaption {
     width: 100%;
+    height: 32.34px;
+    text-align: left;
+    text-indent: 1px;
     font-weight: bold;
     font-size: 1.15em;
     padding: 0.2em;
     color: black;
     background-color: lightblue;
-}
-h1 {
-    font-size: 3em;
+    opacity: 1 !important;
 }
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
-    padding: 2px;
+    padding: 1px;
 }
 .row {
     float: left;
     width: 100%;
     padding: 1px;
 }
+/* hdr spanning a row */    
+.row_hdr {
+  float: center;
+  display: block;
+  height: 34px;
+  margin: 2px;
+  padding: 0px;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c2f0f0;
+}
 iframe.pic {
     margin: auto;
     border: none;
-    padding: 2px;
+    padding: 1px;
     /* settings for Folium html maps: */
-    width: 850px;
-    height: 680px;
+    width: 740px;
+    height: 500px;
 }

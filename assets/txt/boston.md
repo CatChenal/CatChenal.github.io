@@ -1,0 +1,1 @@
+All geocoders have oversized bounding boxes. Although I did not find a Boston shapefile that included the water extent, I doubt it reaches so far out in the Atlantic.

@@ -1,0 +1,1 @@
+AzureMaps changed for the worse: it returned a restaurant on the West Side and gave it a huge footprint! Whereas the old box around Central Park was tight, the new one shows that the box buffer is variable: odd.

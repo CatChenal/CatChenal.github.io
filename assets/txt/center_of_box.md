@@ -1,0 +1,2 @@
+Here, I wanted to check the relationship between the coordinates of a location with those of its bounding box center. I expected them to be non-identical (False) everywhere. Instead, ArcGis seems to re-assign the location coordinates to the box center.<br>
+The new data shows that AzureMaps has lost its consistency.

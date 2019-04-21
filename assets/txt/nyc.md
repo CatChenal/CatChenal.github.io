@@ -1,0 +1,4 @@
+*Each item in the legend can be toggled on/off, and the [+] and [-] buttons allow zooming in and out, respectively.*<br>
+There is no change in the data for this query.  Nominatim returns the coordinates of "Ukrainian Village, New York, NY 10003" as the location for this query (?), while the others land close to City Hall Park.<br><br>
+**Note:** The newer map style differs slightly as follows:<br>
+I've added the place coordingates in the legend along with the bounding boxes calculated from the shapefiles for reference. The geocoders colors are desaturated and the shapefiles lines are dark grey instead of blue.

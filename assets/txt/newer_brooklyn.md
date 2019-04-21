@@ -1,0 +1,1 @@
+AzureMaps is now near Cayuga Lake in Trumansburg, New York, on Kingtown Road: here's a fuzzy connection!

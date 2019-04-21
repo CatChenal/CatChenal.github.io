@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Geocoders Comparisons (slider)</title>
     <link rel="stylesheet" href="./css/custom_slid.css" />
     <link rel="stylesheet"
@@ -26,55 +28,39 @@
         <input type="radio" name="slides" id="slides_11" />
         <input type="radio" name="slides" id="slides_12" />
         <ul>
-            <!--slide 1-->
+            <!--slide 1: intro -->
             <li class="scrollable">
-                <h1 style="font-size:2em;color:#006699;">
-                    Comparison of four Geopy geocoders: 
-                    September 2018 vs. April 2019 results</h1>
-                <h3>Part I: Quantitative summary: pairwise differences as distances</h3>
-                <p>Overall, the results from AzureMaps differ the most from the others, especially for 
-                    Kings (Brooklyn) and Richmond (Staten Island) counties, as is shown by their respective 
-                    maps: Slides 9, and 11.
-                </p>
-                <p>Notes:<br>
-                I gave a generous 5 km (~3.1 miles) allowance for heatmaping the distance 
-                            differences; this means that the color scale applies to distances that are 
-                            greater than that.
-                <br>
-                I did not find the NYC equivalent 'shapefile with waters' for Boston.
-                </p>
-                <h3>Part II: Maps!</h3>
-                <p>In my updated implementation, I figured out how to draw the box from the shapefiles. 
-                    The map elements from the shapefile are color-coded black in the legends; these are called 
-                    "Boro bounds" in the old maps, "shapefile bounds" and "shapefile box" in the new ones. 
-                    The color of elements for each geocoder is also slightly changed (desaturated).
-                </p>
-                <p>Finally, the embedded <a href="https://python-visualization.github.io/folium/#">Folium</a> 
-                    maps are fully functional:&nbsp;&nbsp;
-                    The zoom indication in the captions helps visualize out-of-bounds results; 
-                    The map elements, which overlap if identical, can be toggled on/off in the legend.
-                </p>
-                <p id="last-p"></p>
+                <embed src="./frames/txt_intro.html" >
             </li>
             <!--slide 2-->
             <li>
+                <div class="row">
                 <figure>
                     <figcaption>Sep, 2018: AzureMaps differ the most, along with 
                         ArcGis for the NE corner of the bounding box.
                     </figcaption>
-                    <img src="./images/sep2018_Heatmap_sns_geodist_difference_mi.svg" 
+                    <img src="./images/sep2018_Heatmap_sns_geodist_difference_mi.svg"
+                         height="500px" 
                          alt="old Pairwise differences in miles">
                 </figure>
+                </div>
+                <div class="row">
+                    <embed src="./frames/txt_older_heatmaps.html" >
+                </div>
             </li>
             <!--slide 3-->
             <li>
+                <div class="row">
                 <figure>
-                    <figcaption>Apr, 2019: &nbsp; Changed: &#9989; AzureMaps still differ the 
-                        most (Note: the color is scaled to new extremes; other values may be unchanged, e.g. ArcGis)
-                    </figcaption>
+                    <figcaption>Apr, 2019: &nbsp; Changed: &#9989; AzureMaps still differ the most </figcaption>
                     <img src="./images/Heatmap_sns_geodist_difference_mi.svg" 
-                            alt="new Pairwise differences in miles">
+                         height="500px" 
+                         alt="new Pairwise differences in miles">
                 </figure>
+                </div>
+                <div class="row">
+                    <embed src="./frames/txt_newer_heatmaps.html" >
+                </div>
             </li>
             <!--slide 4-->
             <li>
@@ -97,14 +83,19 @@
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                    <embed src="./frames/txt_center_of_box.html" >
+                </div>
             </li>
             <!--slide 5: NYC-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"New York City, NY, USA"</p>
+                </div>
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: New York City:
-                            </figcaption>
+                            <figcaption>Sep, 2018:</figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_New_York_City.html">
                             </iframe>
@@ -112,21 +103,26 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; Changed: &#9989;
-                            </figcaption>
+                            <figcaption>Apr, 2019:</figcaption>
                             <iframe class="pic" 
                                     src="./frames/New_York_City.html">
                             </iframe>
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                    <embed src="./frames/txt_nyc.html" >
+                </div>
             </li>
             <!--slide 6: NYC county-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"New York county, NY, USA"</p>
+                </div>
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: New York (Manhattan) county: GoogleV3=AzureMaps?
+                            <figcaption>Sep, 2018: New York county (Manhattan): GoogleV3=AzureMaps?
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_New_York_county.html">
@@ -135,7 +131,7 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; Changed: &#9989; AzureMaps got worse!
+                            <figcaption>Apr, 2019: &nbsp; Changed: &#9989; AzureMaps got worse! (zoom out 1x)
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/New_York_county.html">
@@ -143,15 +139,19 @@
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                    <embed src="./frames/txt_ny_county.html" >
+                </div>
             </li>
             <!--slide 7: Cleo-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Cleopatra's needle, Central Park, New York, NY, USA"</p>
+                </div>
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Cleopatra's Needle in Central Park: 
-                                        AzureMaps box=Central Park; ArcGis box=??
-                            </figcaption>
+                            <figcaption>Sep, 2018: AzureMaps box=Central Park; ArcGis box=??</figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Cleopatra's_needle.html">
                             </iframe>
@@ -159,23 +159,31 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; AzureMaps got worse: returned a West side 
-                                restaurant & gave it a huge footprint!
-                            </figcaption>
+                            <figcaption>Apr, 2019: &nbsp; &#9989; AzureMaps got worse</figcaption>
                             <iframe class="pic" 
                                     src="./frames/Cleopatra's_needle.html">
                             </iframe>
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="column">
+                        <embed src="./frames/txt_older_cleo.html" >
+                    </div>
+                    <div class="column">
+                        <embed src="./frames/txt_newer_cleo.html" >
+                    </div>
+                </div>
             </li>
             <!--slide 8: Bronx-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Bronx county, NY, USA"</p>
+                </div>
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Bronx county
-                            </figcaption>
+                            <figcaption>Sep, 2018: </figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Bronx_county.html">
                             </iframe>
@@ -183,21 +191,26 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure improved its box!
-                            </figcaption>
+                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure improved its box!</figcaption>
                             <iframe class="pic" 
                                     src="./frames/Bronx_county.html">
                             </iframe>
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                    <embed src="./frames/txt_bronx.html" >
+                </div>
             </li>
             <!--slide 9: Brooklyn-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Kings county, NY, USA"</p>
+                </div>                
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Brooklyn (Kings) county: AzureMaps lands in Long Island!
+                            <figcaption>Sep, 2018: Kings county (Brooklyn): AzureMaps lands in Long Island!
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Kings_county.html">
@@ -206,7 +219,7 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; AzureMaps got worse: now near Syracuse! (zoom OUT 3x)
+                            <figcaption>Apr, 2019: &nbsp; &#9989; AzureMaps got worse: now upstate! (zoom OUT 3x)
                             </figcaption>
                             <iframe class="pic" 
                                     src="./frames/Kings_county.html">
@@ -214,14 +227,24 @@
                         </figure>
                     </div>
                 </div>
+                <div class="row" text-align="center">
+                    <div class="column">
+                        <embed src="./frames/txt_older_brooklyn.html" >
+                    </div>
+                    <div class="column">
+                        <embed src="./frames/txt_newer_brooklyn.html" >
+                    </div>
+                </div>
             </li>
             <!--slide 10: Queens-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Queens county, NY, USA"</p>
+                </div>   
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Queens county:
-                            </figcaption>
+                            <figcaption>Sep, 2018:</figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Queens_county.html">
                             </iframe>
@@ -229,22 +252,26 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse!
-                            </figcaption>
+                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse!</figcaption>
                             <iframe class="pic" 
                                     src="./frames/Queens_county.html">
                             </iframe>
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                     <embed src="./frames/txt_queens.html" >
+                </div>
             </li>
             <!--slide 11: Staten Island-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Richmond county, NY, USA" </p>
+                </div>   
                 <div class="row">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep, 2018: Staten Island (Richmond) county:
-                            </figcaption>
+                            <figcaption>Sep, 2018: Richmond county (Staten Island):</figcaption>
                             <iframe class="pic" 
                                     src="./frames/sep2018_Richmond_county.html">
                             </iframe>
@@ -252,23 +279,26 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse! (zoom OUT 3x)
-                            </figcaption>
+                            <figcaption>Apr, 2019: &nbsp; &#9989; Azure got worse! (zoom OUT 3x)</figcaption>
                             <iframe class="pic" 
                                     src="./frames/Richmond_county.html">
                             </iframe>
                         </figure>
                     </div>
                 </div>
+                <div class="row">
+                     <embed src="./frames/txt_si.html" >
+                </div>
             </li>
             <!--slide 12: Boston-->
             <li>
+                <div class="row_hdr">
+                    <p>Query: &nbsp;&nbsp;"Boston, MA, USA"</p>
+                </div> 
                 <div class="row_li">
                     <div class="column">
                         <figure>
-                            <figcaption>Sep 2018, Boston: all geocoders boxes extend far into the Atlantic, 
-                                especially that from AzureMaps.
-                            </figcaption>
+                            <figcaption>Sep 2018:</figcaption>
                             <iframe class="pic"
                                     src="./frames/sep2018_Boston.html"
                             ></iframe>
@@ -276,13 +306,16 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <figcaption>Apr 2019, Boston: &nbsp; &#9989; Azure improved its box!
+                            <figcaption>Apr 2019: &nbsp; &#9989; Azure improved its box!
                             </figcaption>
                             <iframe class="pic"
                                     src="./frames/Boston.html"
                             ></iframe>
                         </figure>
                     </div>
+                </div>
+                <div class="row">
+                     <embed src="./frames/txt_boston.html" >
                 </div>
             </li>
         </ul>
@@ -304,7 +337,7 @@
 
 </body>
 <footer>
-    <p style="font-size:2em;"><strong>Cat Chenal</strong></p>
+    <p style="font-size:1em;"><strong>Cat Chenal</strong></p>
     <p>
         <a href="https://github.com/CatChenal">
         <i class="fa fa-github" 
