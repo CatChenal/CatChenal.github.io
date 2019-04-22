@@ -6,8 +6,8 @@
 
     <title>Geocoders Comparisons (slider)</title>
     
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/embed.css" /> 
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/custom_slid.css" />
+    <link rel="stylesheet" href="./css/embed.css" /> 
+    <link rel="stylesheet" href="./css/custom_slid.css" />
     
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +31,7 @@
         <input type="radio" name="slides" id="slides_12" />
         <ul>
             <!--slide 1: intro -->
-            <li class="scrollable">
+            <li class="scrollable" id="narr">
                 <embed id="narr" 
                        src="./frames/txt_intro.html" >
             </li>
@@ -47,7 +47,7 @@
                          alt="old Pairwise differences in miles">
                 </figure>
                 </div>
-                <div class="row">
+                <div class="row" id="narr">
                     <embed id="narr"
                            src="./frames/txt_older_heatmaps.html" >
                 </div>
