@@ -1,7 +1,6 @@
 ## Comparison of Four Geocoders: Nominatim, GoogleV3, ArcGis and AzureMaps
 
 ### Geocoding services (via Geopy):
-
 Geocoding refers to the maping of an address to its geographic coordinates. Specifically, the geocoding of a location specified by a query string can be achieved using calls to geocoding services (APIs) directly in a browser address box, or with a wrapping library such as [Geopy](https://geopy.readthedocs.io/en/stable/).
 
 ### Why I setup this comparison:
@@ -41,7 +40,7 @@ I used two shapefiles: that of New York City (with water extent), and that of Bo
 * "Richmond county, NY, USA"<br>
 * "Boston, MA, USA"<br>
 
-### Report on temporal differences:  
+### Update: Report on temporal differences:  
 Because I noticed that the results from this April were different from those from last September (2018), I put together an HTML report highlighting the differences.  A persistent oddity is that half of the geocoders tested cannot distinguish between "New York City" and "New York county" (Manhattan): GoogleV3 and ArcGis return identical bounding boxes.
 
 ### Slides in this updated report:   

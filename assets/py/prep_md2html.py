@@ -81,9 +81,12 @@ def embed_narratives(txt_dir, tpl_path, frame_dir):
 
 if __name__ == "__main__":
     import os
-    
-    txt_dir = os.path.join(os.dirname(__file__), 'txt')
+
+    assets_dir, _ = os.path.split(os.path.dirname(__file__))
+
+    txt_dir = os.path.join(assets_dir, 'txt')
     tpl_path = os.path.join(txt_dir, 'narrative_template.html')
-    frame_dir = os.path.join(os.dirname(__file__), 'frames')
+    frame_dir = os.path.join(assets_dir, 'frames')
 
     embed_narratives(txt_dir, tpl_path, frame_dir)
+    
