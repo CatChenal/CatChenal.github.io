@@ -2,15 +2,15 @@
 
 """
 This module is used to:
-1. create an output html template that includes a ref to a given css;
+1. use an html template pre-styled for a narrative/text div;
 2. convert a bunch of mardown files in a given folder to html using above template;
-3. save each output html file in ../frames/
+3. save each output html file in ../frames/ for use by the sliderReport.
 Command line call:
 ```
-python -m prep_md2html.py
+python -m prep_md2html
 ```
-
 """
+
 def get_html_tpl(tpl_fullname):
     """ This uses FileSystemLoader (FSL), not PackageLoader.
         Assumes dir for FSL is tpl_fullname parent dir.
@@ -21,7 +21,8 @@ def get_html_tpl(tpl_fullname):
     tpl_dir = os.path.dirname(tpl_fullname)
     tpl_name = os.path.basename(tpl_fullname)
     
-    jenv = Environment(loader=FileSystemLoader(tpl_dir), trim_blocks=True)
+    jenv = Environment(loader=FileSystemLoader(tpl_dir), 
+                       trim_blocks=True)
     return jenv.get_template(tpl_name)
 
 
@@ -60,8 +61,9 @@ def save_file(fname, ext, s, replace=True):
 
 def embed_narratives(txt_dir, tpl_path, frame_dir):
     """
-    To convert & save ./assets/txt/markdown narratives to html in ./assets/frames/
-    using the html template ./assets/txt/narrative_template.html.
+    To convert & save ./assets/txt/markdown narratives 
+    to html in ./assets/frames/ using the html template
+     ./assets/txt/narrative_template.html.
     """
     import os
     import glob
@@ -72,7 +74,9 @@ def embed_narratives(txt_dir, tpl_path, frame_dir):
     g = glob.glob(os.path.join(txt_dir, '*.md'))
 
     for f in g:
-        out = os.path.join(frame_dir, 'txt_' + os.path.basename(f)[:-3] + '.html')
+        out = os.path.join(frame_dir,
+                           'txt_' + 
+                           os.path.basename(f)[:-3] + '.html')
         with markdown.codecs.open(f, encoding="utf-8") as md:
             html = markdown.markdown(md.read())
         html_out = html_tpl.render({'EMBED_TXT':html})

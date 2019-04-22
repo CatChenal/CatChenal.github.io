@@ -3,10 +3,85 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/embed.css" />
+    <!-- could not use
+        <link rel="stylesheet" href="../css/embed.css" />:
+        bc ref is no longer correct once embedded in the sliderReport
+     -->
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Raleway:400,700|Lato);
+        #narr {
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', 'Lato'
+        }
+        #narr ul, ol {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 10px;
+            margin-inline-end: 0px;
+            padding-inline-start: 50px;
+        }
+        #narr li {
+        padding-left: 40px;
+        padding-bottom: 1px;
+        text-align: justify;
+        }
+        #narr h1, h2, h3, h4 {
+            display: block;
+            font-weight: bold;
+            text-align: justify;
+        }
+        #narr h1 { 
+            font-size: 2em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+        }
+        #narr h2 {
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+        }
+        #narr h3 { 
+            font-size: 1.17em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        #narr h4 { 
+            font-size: 1em;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+        }
+        #narr p {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 1px;
+        text-align: left;
+        font-size: 110%;
+        }
+        #narr table, th, td {
+        width: 90%;
+        border: thin silver solid;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        #col1{
+        text-align: center;
+        width: 10%;
+        }
+        #col2{
+        text-align: right;
+        width: 10%;
+        }
+        #col3{
+        width: 60%;
+        margin-left: 20px;
+        }
+    </style>
 </head>
-<!-- next is embedded html str from converted md -->
 <body> 
+    <!-- next is embedded html str from converted md -->
     <div id="narr">
         <p>AzureMaps is now near Cayuga Lake in Trumansburg, New York, on Kingtown Road: here's a fuzzy connection!</p>
     </div>
