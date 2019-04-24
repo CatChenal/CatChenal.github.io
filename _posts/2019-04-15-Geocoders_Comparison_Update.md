@@ -48,14 +48,13 @@ I used two shapefiles: that of New York City (with water extent), and that of Bo
 * "Boston, MA, USA"  
 
 ### Update: Report on temporal differences:  
-Because I noticed that the results from this April were different from those from last September (2018), I put together an HTML report highlighting the differences.  A persistent oddity is that half of the geocoders tested cannot distinguish between "New York City" and "New York county" (Manhattan): GoogleV3 and ArcGis return identical bounding boxes.
+Because I noticed that the results from this April were different from those from last September (2018), I put together an HTML report highlighting the differences.  A persistent oddity is that half of the geocoders tested cannot distinguish between "New York City" and "New York county" (Manhattan): GoogleV3 and ArcGis return identical bounding boxes.  
+I've implemented the report by modifying a CSS slider designed by GH user [drygiel](https://github.com/drygiel/csslider).Thank you, drygiel!  
 
-The older and newer results are displayed in an HTML report implemented with a CSS slider: 
-<a href="{{ site.url }}/assets/sliderReport.html" target="_blank">slider Report</a>
+<a href="{{ site.url }}/assets/sliderReport.html" target="_blank">
+<strong>Report of the older vs. newer geocoding results</strong></a>  
 
-I've implemented the report by modifying a ["JS-less CSS slider"](https://github.com/drygiel/csslider) designed by GH user drygiel.Thank you, drygiel!
-
-In my GitHub repo, the [**Procedures notebook**](https://github.com/CatChenal/Geocoders_Comparison/notebooks/Procedures.ipnyb) details the processing steps and the production of tables and maps included in the slider report.
+In my GitHub repo, the [Procedures notebook](https://github.com/CatChenal/Geocoders_Comparison/notebooks/Procedures.ipnyb) details the processing steps and the production of tables and maps included in the slider report.
 
 # The main conclusion from this comparison:  
 I presume that it is very unlikely that an application would use different geolocating services, but in the case some 'hedging' is involved (e.g. on limits, time-outs), the geolocation for the same query will be different.
