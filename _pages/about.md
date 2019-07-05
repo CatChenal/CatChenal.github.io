@@ -36,9 +36,12 @@ I consider this a technical bottleneck in the information flow because it is so 
 * French (mother tongue)
 * Some Spanish
 
+---
 ## Publications
 
-* Graduate research:
+### Graduate research:
+
+* Article:
 >Two Cl Ions and a Glu Compete for a Helix Cage in the CLC Proton/Cl- Antiporter
 Chenal C and Gunner MR; Biophysical Journal 113, 1025–1036, September 5, 2017
 doi: 10.1016/j.bpj.2017.07.025
@@ -49,16 +52,19 @@ doi: 10.1016/j.bpj.2017.07.025
 https://academicworks.cuny.edu/gc_etds/1874/
 
 
-* Undergraduate research:
+### Undergraduate research:
+
+* Article:
 >Determination of the Degree of Charge-Transfer Contributions to Surface-EnhancedRaman Spectroscopy
 Chenal C, Birke RL and Lombardi JR; ChemPhysChem 2008, 9,1617–1623
 doi: 10.1002/cphc.200800221
 
+* Article:
 >DFT, SERS, and Single-Molecule SERS of Crystal Violet
 Cañamares MV, Chenal C, Birke RL, and Lombardi JR; J.Phys.Chem.C 2008, 112(51),20295–20300
 doi: 10.1021/jp807807j
 
-
+---
 ## Personality assessments:
 
 * 2019:
