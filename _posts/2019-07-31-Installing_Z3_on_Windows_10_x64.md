@@ -2,12 +2,12 @@
 title: "Installing Z3 in an environment on a Windows 10 (x64) system"
 date: 2019-07-31
 tags: [solvers, Satisfiability Modulo Theories]
-excerpt: "LGP: Creating a Lorenz curve with its Gini and balanced inequality ratios."
+excerpt: "Z3](https://github.com/Z3Prover/z3) is an open-sourced software developed at Microsoft and commonly described as a "theorem prover". It is also a problem solver..."
 ---
 
 # What's Z3?
 
-[Z3](https://github.com/Z3Prover/z3) is an open-sourced software developped at Microsoft and commonly described as a "theorem prover". It is also a problem solver as shown in numerous examples in [Dennis Yurichev's SAT/SMT by example](https://yurichev.com/writings/SAT_SMT_by_example.pdf).
+[Z3](https://github.com/Z3Prover/z3) is an open-sourced software developed at Microsoft and commonly described as a "theorem prover". It is also a problem solver as shown in numerous examples in [Dennis Yurichev's SAT/SMT by example](https://yurichev.com/writings/SAT_SMT_by_example.pdf).
 
 # Installing Z3 for python on Windows 10
 
