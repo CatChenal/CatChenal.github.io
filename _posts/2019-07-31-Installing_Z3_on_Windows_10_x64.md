@@ -2,7 +2,7 @@
 title: "Installing Z3 in an environment on a Windows 10 (x64) system"
 date: 2019-07-31
 tags: [solvers, Satisfiability Modulo Theories]
-excerpt: "Z3](https://github.com/Z3Prover/z3) is an open-sourced software developed at Microsoft and commonly described as a "theorem prover". It is also a problem solver..."
+excerpt: "Z3](https://github.com/Z3Prover/z3) is an open-sourced software commonly described as a 'theorem prover'. It is also a problem solver..."
 ---
 
 # What's Z3?
