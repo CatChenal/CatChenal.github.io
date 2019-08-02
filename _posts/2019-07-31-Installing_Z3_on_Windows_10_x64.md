@@ -66,8 +66,7 @@ This command compiles the C++ code.
  
 > The z3.exe appears to be independent and can work anywhere [...]. So you can copy both build/z3.exe and build/libz3.dll into somewhere [and add them to] the PATH.  
 
-I created a Z3 folder in `C:\Program Files` and copied z3.exe and libz3.dll from `<build>`, and created the PATH variables: (z3, C:\Program Files\Z3\z3.exe) and (libz3, C:\Program Files\Z3\libz3.dll).
-Note: I also created these keys in both the System and User variables paths.
+I created a Z3 folder in `C:\Program Files` and copied z3.exe and libz3.dll from `<build>`, and created the PATH variables: (z3, C:\Program Files\Z3\z3.exe) and (libz3, C:\Program Files\Z3\libz3.dll) in both the System and User variables paths.
 
 ## S3. Copy the build/python/z3 directory to an environment:
 
@@ -77,7 +76,7 @@ Note: I also created these keys in both the System and User variables paths.
 ### S3.1: Get the site packages path for an environment:
 I activated my chosen environment (which uses py3.6.7), launched python and used the code from [#916].  
 
-### S3.2: Copied build/python/z3 directory to <env1>\lib\\site-packages
+### S3.2: Copied build/python/z3 directory to `<env1>\lib\\site-packages`
 
 ## S4. Tests:
 
@@ -94,16 +93,16 @@ Could not find libz3.dll; consider adding the directory containing it to
     builtins.Z3_LIB_DIRS = [ '/path/to/libz3.dll' ]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "C:\Users\catch\Anaconda3\envs\dsml\lib\site-packages\z3\__init__.py", line 1, in <module>
+  File "env1\lib\site-packages\z3\__init__.py", line 1, in <module>
     from .z3 import *
-  File "C:\Users\catch\Anaconda3\envs\dsml\lib\site-packages\z3\z3.py", line 45, in <module>
+  File "env1\lib\site-packages\z3\z3.py", line 45, in <module>
     from . import z3core
-  File "C:\Users\catch\Anaconda3\envs\dsml\lib\site-packages\z3\z3core.py", line 67, in <module>
+  File "env1\lib\site-packages\z3\z3core.py", line 67, in <module>
     raise Z3Exception("libz3.%s not found." % _ext)
 z3.z3types.Z3Exception: libz3.dll not found.
 ```
 ### S4.2 Test 2:
-Fix: I copied the build/python/libz3.dll file into the `<env1>\lib\\site-packages\z3` folder and repeated the import & set variable tests:
+Fix: I copied the build/python/libz3.dll file into the `<env1>\lib\\site-packages\z3` folder and repeated the import & variable tests:
 ```
 (base)> conda activate env1
 (env1)> python
