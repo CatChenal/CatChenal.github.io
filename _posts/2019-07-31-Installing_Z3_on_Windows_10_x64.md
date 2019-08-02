@@ -12,15 +12,15 @@ excerpt: "Z3 is an open-sourced software commonly described as a 'theorem prover
 # Installing Z3 for python on Windows 10
 
 These are the steps I followed for a successful installation of Z3 on my current system, Windows 10 x64. I used two sources indicated in brackets: the [Z3 README [RM] file](https://github.com/Z3Prover/z3/blob/master/README.md) and addtional instructions from issue [#916](https://github.com/Z3Prover/z3/issues/916).  
-$S_i$ refers to the sequential steps to full installation.
----
+Sn refers to the sequential steps to full installation.
+
 
 ## S0. Clone the source code [RM]:
 ```
 cd <a path>
 git clone https://github.com/Z3Prover/z3.git
 ```
-The path <build> I refer to further will then be equivalent to `<a path>\z3\build`.  
+The path `<build>` I refer to further will then be equivalent to `<a path>\z3\build`.  
 
 ## S1. First build (to .pyc components) [#916]:
 
@@ -66,7 +66,7 @@ This command compiles the C++ code.
  
 > The z3.exe appears to be independent and can work anywhere [...]. So you can copy both build/z3.exe and build/libz3.dll into somewhere [and add them to] the PATH.  
 
-I created a Z3 folder in `C:\Program Files` and copied z3.exe and libz3.dll from <build>, and created the PATH variables: (z3, C:\Program Files\Z3\z3.exe) and (libz3, C:\Program Files\Z3\libz3.dll).
+I created a Z3 folder in `C:\Program Files` and copied z3.exe and libz3.dll from `<build>`, and created the PATH variables: (z3, C:\Program Files\Z3\z3.exe) and (libz3, C:\Program Files\Z3\libz3.dll).
 Note: I also created these keys in both the System and User variables paths.
 
 ## S3. Copy the build/python/z3 directory to an environment:
@@ -82,11 +82,10 @@ I activated my chosen environment (which uses py3.6.7), launched python and used
 ## S4. Tests:
 
 ### S4.1 Test 1:
-Using a conda prompt, I activated <env1>, launched python & imported z3:
-(env1)> python
->>> import z3
-Import error:
+Using a conda prompt, I activated `<env1>`, launched python & imported z3:
 ```
+(env1)> python
+>>> import z3   ##Import error:
 Could not find libz3.dll; consider adding the directory containing it to
   - your system's PATH environment variable,
   - the Z3_LIBRARY_PATH environment variable, or
@@ -104,7 +103,7 @@ Traceback (most recent call last):
 z3.z3types.Z3Exception: libz3.dll not found.
 ```
 ### S4.2 Test 2:
-Fix: I copied the build/python/libz3.dll file into the <env1>\lib\\site-packages\z3 folder and repeated the import & set variable tests:
+Fix: I copied the build/python/libz3.dll file into the `<env1>\lib\\site-packages\z3` folder and repeated the import & set variable tests:
 ```
 (base)> conda activate env1
 (env1)> python
@@ -121,7 +120,7 @@ What I think happened can be seen using the path from the sys module:
 >>> import sys; sys.path
 ['', '<env1>\\python36.zip', '<env1>\\DLLs', '<env1>\\lib', '<env1>', '<env1>\\lib\\site-packages']
 ```
-Since env1 is the active environment, this is the default path, so until I copied libz3.dll into <env1>\lib\\site-packages\z3, it could not be found.
+Since env1 is the active environment, this is the default path, so until I copied libz3.dll into `<env1>\lib\\site-packages\z3`, it could not be found.
 
 
 Now I can play with z3.py and sympy!
