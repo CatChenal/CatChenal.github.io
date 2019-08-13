@@ -76,7 +76,7 @@ naver_site_verification  :
 twitter:
   username               : "Ylemental"
 
-og_image                 : "/assets/images/ISEE3_sm.jpg"
+og_image                 : "/assets/images/ISEE3.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -86,7 +86,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google"
+  provider               : "google-universal"
   google:
     tracking_id          : "UA-120962293-1"
     anonymize_ip         : # true, false (default)
