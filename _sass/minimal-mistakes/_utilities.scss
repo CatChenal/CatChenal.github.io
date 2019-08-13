@@ -158,12 +158,12 @@ body:hover .visually-hidden button {
 }
 
 /* file page content container */
-
 .full {
   @include breakpoint($large) {
-    margin-right: -1 * span(2.5 of 12) !important;
+    margin-right: -1 * span(1.5 of 12) !important;
   }
 }
+/* was:margin-right: -1 * span(2.5 of 12) !important;*/
 
 /*
    Icons
