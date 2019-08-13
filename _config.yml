@@ -76,7 +76,7 @@ naver_site_verification  :
 twitter:
   username               : "Ylemental"
 
-og_image                 : "/assets/images/ISEE3.jpg"
+og_image                 : "/assets/images/ISEE3_sm.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

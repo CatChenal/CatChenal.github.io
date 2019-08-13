@@ -25,7 +25,7 @@ git clone https://github.com/Z3Prover/z3.git
 ```
 The path `<build>` I refer henceforth is equivalent to `<a path>\z3\build`.  
 
-## Step 1. First build (to .pyc components) [#916]:
+## Step 1. First build: to .pyc components [916]:
 
 The build operation should take place inside the x64 Native Build Tools Prompt.
 For my system, the VS Tools version (Windows 10) is "x64 Native Tools Command Prompt for VS 2017"
@@ -65,7 +65,7 @@ Typed: `cd <build> && nmake`, then pressed ENTER.
 This command compiles the C++ code.  
 
 
-## Step 2. Add Z3 exec and lib files to the PATH [#916]:
+## Step 2. Add Z3 exec and lib files to the PATH [916]:
  
 > The z3.exe appears to be independent and can work anywhere [...]. So you can copy both build/z3.exe and build/libz3.dll into somewhere [and add them to] the PATH.  
 
@@ -77,7 +77,7 @@ I created this folder `C:\Program Files\z3`, copied z3.exe and libz3.dll from `<
 
 
 ### Step 3.1: Get the site packages path for an environment:
-I activated my chosen environment `env1`, which uses py3.6.7, launched python and used the code from [#916].  
+I activated my chosen environment `env1`, which uses py3.6.7, launched python and used the code from [916].  
 
 ### Step 3.2: Copied build/python/z3 directory to `<env1>\lib\\site-packages`
 
