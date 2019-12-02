@@ -7,14 +7,14 @@ Some info about me.
 
 
 ## I am a constant learner.
-I came to Machine Learning after getting a PhD in Biochemistry in a Computational Biophysics lab. Conducting biophysical simulations entails learning how to setup many parameters, including optimization parameters, such as gradient descent, simulated annealling, etc. Sampling techniques such as Markov Chain Monte Carlo are also used in non-dynamic simulations to obtain equilibrium distributions.
-So there is a lot of overlap between ML and my doctoral training. I found that this training, along with the maths and statistics I learned while getting my first BA in Mathematics, has significantly reduced the steepness of the ML learning curve.
+I came to Machine Learning after getting a PhD in Biochemistry in a Computational Biophysics lab. Conducting biophysical simulations entails learning about optimization techniques, such as gradient descent or simulated annealling, and how to setup their parameters. Sampling techniques such as Markov Chain Monte Carlo are also used in non-dynamic simulations to obtain equilibrium distributions.
+So there is a lot of overlap between ML and my doctoral training. I found that this training, along with the maths and statistics I learned while getting my BA in Mathematics, smoothed out the ML learning curve.
 
 ## I care about data quality because data-driven decisions can be wrong. 
 My scientific training has fine-tuned my 'data sentience': using data as input entails a minimum knowledge about its origin (population, method of acquisition, schema), as well as accountability for its pre-processing and usage. This information should be part of a project's documentation.
 
 ## I like to show data.
-I aim to produce 'idiot-proof' data visualizations: ones with meaningful scales, markers, accessible color schemes, and labeling. I believe that a visualization should not need decyphering or raise questions because of its design: instantaneous data comprehension is the ultimate 'prettiness' criterion for a data picture.
+I aim to produce information-rich data visualizations: ones with meaningful scales, markers, accessible color schemes, and labeling. I believe that a visualization should not need decyphering or raise questions because of its design: instantaneous data comprehension is the ultimate 'prettiness' criterion for a data picture.
 
 ## I like to mentor.
 I have several motivations for mentoring/taching: 
@@ -23,7 +23,7 @@ I have several motivations for mentoring/taching:
 
 ## I consider teaching a personal growth skill that:
 - Helps me zoom in on the relevant points needed for a particular student to learn about about a particular topic
-- Sets the high-bar of knowledge transfer: if *you* don't get it, by thedault the root cuase is my explanation
+- Sets the high-bar of knowledge transfer: if *you* don't get it, by dedault the root cause is my explanation
 
 ## My rants:
 1. Web designers who select absurdly low text or color contrast.  
@@ -33,7 +33,7 @@ I consider this a technical bottleneck in the information flow because it is so 
 
 ## Foreign languages
 * English
-* French (mother tongue)
+* French
 * Some Spanish
 
 ---
@@ -63,12 +63,3 @@ doi: 10.1002/cphc.200800221
 >DFT, SERS, and Single-Molecule SERS of Crystal Violet
 Cañamares MV, Chenal C, Birke RL, and Lombardi JR; J.Phys.Chem.C 2008, 112(51),20295–20300
 doi: 10.1021/jp807807j
-
----
-## Personality assessments:
-
-* 2019:
-[RedBull WingFinder]({{ site.url }}{{ site.baseurl }}/assets/Redbull_Passport.pdf)
-
-* 2016:
-[Gallup-Clifton]({{ site.url }}{{ site.baseurl }}/assets/Gallup_Clifton_Themes.pdf)
