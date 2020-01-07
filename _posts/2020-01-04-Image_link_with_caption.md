@@ -2,7 +2,7 @@
 title: "Displaying images with a caption"
 date: 2020-01-04
 tags: [Data Visualization, HTML5]
-excerpt: "Go <figure>..."
+excerpt: "Go figure..."
 ---
 
 #### Unless an image already includes a caption, it is in many cases advisable to include one. 
