@@ -15,7 +15,7 @@ I first encountered such a graph in a [BBC graphic about COVID-19 cases (at bott
 The animation is _seemingly_ appealing as a way to convey the changes in, say the top 10 categories over time where each of them seems to be "racing for the top".  
 Because it is a visualization, it forces the reader to use visual clues to extract information, e.g. to answer the basic question "What is this gif showing?".  
 Here is an example:  
-![gif]({{ site.url }}/assets/images/barh_chase/deaths_US/deaths_US_2020_07_04.gif)
+![gif]({{ site.url }}/assets/images/deaths_US_2020_07_04.gif)  
 
 Each image in the gif dislays the bar values of the top 10 of some categories over time, here for the COVID-19 data, the categories are countries or US states. For all the daily timeseries in the data, these values are positive. Over time some categories will disappear from the top 10 ranking, while others will stay in the top 10 for many days. When this occurs, the data is increasing. Yet, some bars will shrink. This leads to a complete disconnect viz the numbers (bar lengths) that are displayed: **the visual clue contradicts the data**.   
 
