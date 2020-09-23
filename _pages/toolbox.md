@@ -3,7 +3,7 @@ title: "My Toolbox"
 permalink: /toolbox/
 author_profile: true
 header:
-  image: "/assets/images/me.jpeg"
+  image: "/assets/images/earth.png"
 ---
 
 ANALYSIS: Pandas, NumPy, Scipy
@@ -12,7 +12,7 @@ DATABASES: MS SQL and Access, PostgreSQL, MySQL, Neo4j
 
 WEB DATA ACQUISITION: Scrapy, BeautifulSoup
 DATAVIZ: matplotlib, bokeh, plotly, graphviz, networkx, pyViz
-SPATIAL: Folium, ArcGIS
+SPATIAL: Folium, ArcGIS, Geopandas, GeoJson
 
 CLOUD: Amazon Web Services (AWS), Google Compute Services
 
