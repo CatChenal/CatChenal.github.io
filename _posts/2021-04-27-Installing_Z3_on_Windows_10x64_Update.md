@@ -15,10 +15,10 @@ Z3 is also a problem solver as shown in numerous examples in [Dennis Yurichev's 
 
 # Installing Z3 for python on Windows 10
 
-These are the steps I followed for a successful installation of Z3 on my current system, Windows 10x64. I used two sources, which I will refer to in brackets: the [Z3 README file [RM]](https://github.com/Z3Prover/z3/blob/master/README.md) and the additional instructions from [issue [916]](https://github.com/Z3Prover/z3/issues/916).  
+These are the steps I followed for a successful installation of Z3 on my current system, Windows 10x64. I used two sources: the [Z3 README file [RM]](https://github.com/Z3Prover/z3/blob/master/README.md) and the additional instructions from [issue [916]](https://github.com/Z3Prover/z3/issues/916).  
 
-My steps differ somewhat from those given in [RM] [for python](https://github.com/Z3Prover/z3#python):  
-I build the python bindings in the local repo of the cloned z3 latest release to have a single z3 version on my system. I can then copy the necessary files into any python environment I choose.
+My steps differ somewhat from those given in [[RM] for python](https://github.com/Z3Prover/z3#python):  
+I build the python bindings in the local repo of the cloned, latest release to have a single Z3 version on my system. I can then copy the necessary files into any python environment I choose.
 
 ### Note: This installation requires Visual Studio.
 Many other software installations also rely on it, so go ahead: [download it](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019) and install it: you won't regret it!
@@ -30,7 +30,7 @@ cd <project>
 git clone --depth 1 -b z3-4.8.10 https://github.com/Z3Prover/z3.git
 ```
 
-## Step 2: Create the makefile into the local z3 repo [RM]:
+## Step 2: Create the makefile into the local Z3 repo [RM]:
 ```
 cd z3
 python scripts/mk_make.py -x --python
@@ -55,7 +55,7 @@ On my system (Windows 10x64, VS 2019):
 
 ## Step 4: Build Z3 with the created Makefile from the VS command prompt:
 ```
-cd C:\<path\to\project>\z3\build && nmake   & rem use the command given at end of build output.
+cd C:\<path\to\project>\z3\build && nmake   & REM use the command given at end of Step 2.
 ```
 The output lists all the C++ modules generated (in around 10 minutes on my system). A successful build ends with these lines:
 ```
@@ -86,11 +86,10 @@ In a default Anaconda installation, the path to the environment site-packages fo
 python -c "import site; print(site.getsitepackages())"
 ```
 
-* 6.3: Copy the z3 folder from the `<project>/z3/build/python/` directory into <env1> site-packages/z3 directory.
+* 6.3: Copy the Z3 folder from the `<project>/z3/build/python/` directory into <env1> site-packages/z3 directory.
 
 
 ## Step 7: Test
-If you pass the following test, you're all set with Z3:
 ```
 (env1)> python
 >>> import z3
@@ -98,4 +97,5 @@ If you pass the following test, you're all set with Z3:
 x
 >>> exit()
 ```
+If you pass the test, you're all set with Z3!
 
