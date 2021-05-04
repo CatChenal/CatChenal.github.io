@@ -86,7 +86,7 @@ In a default Anaconda installation, the path to the environment site-packages fo
 python -c "import site; print(site.getsitepackages())"
 ```
 
-* 6.3: Copy the Z3 folder from the `<project>/z3/build/python/` directory into <env1> site-packages/z3 directory.
+* 6.3: Copy the Z3 folder from the `<project>/z3/build/python/` directory into the <env1> environment site-packages/z3 directory.
 
 
 ## Step 7: Test

@@ -5,4 +5,4 @@ tags: [solvers]
 excerpt: "Z3 is an open-sourced software commonly described as a 'theorem prover'..."
 ---
 
-# See [updated version]({{ site.url }}/_posts/2021-04-27-Installing_Z3_on_Windows_10x64_Update.md).
+# See [updated version]({% post_url 2021-04-27-Installing_Z3_on_Windows_10x64_Update %}).
