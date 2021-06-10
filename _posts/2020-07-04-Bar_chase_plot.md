@@ -15,7 +15,7 @@ The animation can be an appealing way to convey the changes in the top N categor
 Here is an example:  
 ![gif]({{ site.url }}/assets/images/deaths_US_2020_07_04.gif)  
 
-Each image in the gif displays the ranked bar plot of the top 10 countries or US states with COVID-19 cases as categories and _cumulative_ number of cases as bar values. Over time some categories will disappear from the top 10 ranking, while others will stay in the top 10 for many days. Some bars that persist in the top 10 ranking over a period of time will shrink due to the population differences and time of infection compared to over-ranked categories. Yet, the data is increasing. This leads to a complete disconnect viz the displayed values: **the visual clue contradicts the data**.   
+Each image in the gif displays the ranked bar plot of the top 10 countries or US states in COVID-19 fatalities as categories and _cumulative_ number of deaths as bar values. Over time some categories will disappear from the top 10 ranking, while others will stay in the top 10 for many days. Some bars that persist in the top 10 ranking over a period of time will shrink due to the population differences and time of infection compared to over-ranked categories. Yet, the data is increasing. This leads to a complete disconnect viz the displayed values: **the visual clue contradicts the data**.   
 
 As a producer (coder) of such a report, this 'strangeness' is quite understandable: it is the ranking itself that is visualized, the values are 'extra info'. Yet as a consumer (reader), it is completely psychotic as there is no resolution possible between the visual clues and the numerical information that is displayed. Therefore, this visualization SHOULD NOT be used as is.  
 
