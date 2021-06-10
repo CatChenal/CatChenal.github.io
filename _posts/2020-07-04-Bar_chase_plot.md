@@ -11,8 +11,7 @@ A bar chase plot is an animated, ranked bar plot that is meant to show changes i
 I first encountered such a graph in a [BBC graphic about COVID-19 cases (at bottom of page)](https://www.bbc.com/news/world-51235105). I've reproduced it with country assigned colors using the daily data compiled by [the center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data).
 
 # Data-driven, dynamic visualizations can run amok!
-The animation is _seemingly_ appealing as a way to convey the changes in, say the top 10 categories over time where each of them seems to be "racing for the top".  
-Because it is a visualization, it forces the reader to use visual clues to extract information, e.g. to answer the basic question "What is this gif showing?".  
+The animation can be an appealing way to convey the changes in the top N categories over time where each of them seems to be "racing for the top". As with all visualizations, it forces the reader to use visual clues to extract information, e.g. to answer the basic question "What is this gif showing?".  
 Here is an example:  
 ![gif]({{ site.url }}/assets/images/deaths_US_2020_07_04.gif)  
 
