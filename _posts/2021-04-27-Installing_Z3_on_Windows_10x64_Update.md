@@ -14,9 +14,9 @@ Z3 is also a problem solver as shown in numerous examples in Dennis Yurichev's [
 
 # Overview
 The purpose of this post is to show how the Z3 library can be added to any compatible virtual environment on a Windows 10x64 machine.  
-I followed the steps listed in __Workflow__ to successful installation of Z3 on my current system, Windows 10x64. I used two sources: the [Z3 README file [RM]](https://github.com/Z3Prover/z3) and the additional instructions from [issue [916]](https://github.com/Z3Prover/z3/issues/916).  
+I followed the steps listed in __Workflow__ towards a successful installation of Z3 on my current system, Windows 10x64 with the help of these two sources: the [Z3 README file [RM]](https://github.com/Z3Prover/z3) and the additional instructions from [issue [916]](https://github.com/Z3Prover/z3/issues/916).  
 As the Z3 solver is written in C++, it first needs compiling or building. The build step yields an executable file `z3.exe` and its accompanying library `libz3.dll`, along with a `python/z3` folder.  Note that as per [Dependencies in [RM]](https://github.com/Z3Prover/z3#dependencies), Python3 is required to build Z3 as well as Visual Studio.  
-In order to use Z3 within python, you need to install its wrapper `z3_solver`, typically in a virtual environment &mdash; or in multiple environments; this is detailed in __Step 2__.  
+In order to use Z3 within python, you need to install its wrapper `z3_solver`, typically in a virtual environment &mdash; or in multiple environments: this is detailed in __Step 2__.  
 
 # Workflow
  1. Build Z3 with python on Windows 10x64  
