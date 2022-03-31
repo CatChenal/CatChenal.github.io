@@ -83,7 +83,7 @@ Z3 was successfully built.
 "Z3Py scripts stored in arbitrary directories can be executed if the 'build\python' directory is added to the PYTHONPATH environment variable and the 'build' directory is added to the PATH environment variable."
 ```
 
-After a successful build, the <project>/z3/build/ folder contains the z3 executable file `z3.exe`, the library `libz3.dll` and a python/z3 folder.    
+After a successful build, the `<project>/z3/build/` folder contains the z3 executable file `z3.exe`, the library `libz3.dll` and a `python/z3` folder.    
 As noted in [[RM] for python](https://github.com/Z3Prover/z3#python):
 > Note that the build/python/z3 directory should be accessible from where python is used with Z3 and it depends on libz3.dll to be in the path.
 Decoded, "from where python is used" means a Python environment.
@@ -106,7 +106,9 @@ conda activate env1
 (env1)> pip install z3-solver
 ```
 ### 2.3 Locate the environment site-packages folder:
-Typically in a default Anaconda installation, the path to the environment site-packages folder is: `C:\\Users\\<u>\\Anaconda3\\lib\\site-packages`, and the corresponding path for a specific environment is: `C:\\Users\\<u>\\Anaconda3\\envs\\<env1>\\lib\\site-packages`.  
+Typically, in a default Anaconda installation, the path to the environment site-packages folder is: `C:\\Users\\<u>\\Anaconda3\\lib\\site-packages`   
+and the corresponding path for a specific environment is: `C:\\Users\\<u>\\Anaconda3\\envs\\<env1>\\lib\\site-packages`.    
+    
 The following command yields the actual path on your system:  
 ```
 (env1)> python -c "import site; print(site.getsitepackages())"  # [916]
